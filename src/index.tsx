@@ -12,9 +12,10 @@ import { Sidekick } from "ai-jsx/sidekick";
 //    tell me about foxes and what they eat
 //    what is the fennec fox like? how big do they get?
 //    who is foxie?
-const FIXIE_CORPUS_ID: string = "28d916b2-ac80-44c5-a965-8101c0f11b6b";
+const HANDBOOK_CORPUS_ID: string = "28d916b2-ac80-44c5-a965-8101c0f11b6b";
+const ENDANGERED_LIST_CORPUS_ID: string = "1045f09f-e237-4074-ae4d-a5ef97f98d24";
 
-if (!FIXIE_CORPUS_ID) {
+if (!HANDBOOK_CORPUS_ID) {
   throw new Error("Please set a FIXIE_CORPUS_ID in src/index.tsx");
 }
 
@@ -25,8 +26,12 @@ const tools: Record<string, Tool> = {
   // something more descriptive like 'lookUpAcmeCompanyKnowledgeBase'.
   // For more tips on using Tools, see: https://docs.ai-jsx.com/tutorial/part7-tools
   lookUpLinguisticsFieldBestPracticesKnowledgeBase: FixieCorpus.createTool(
-    FIXIE_CORPUS_ID,
+    HANDBOOK_CORPUS_ID,
     "A tool for looking additional information to help answer the user query."
+  ),
+  lookUpEndangeredLanguages: FixieCorpus.createTool(
+    ENDANGERED_LIST_CORPUS_ID,
+    "A tool for looking up endangered and dying languages."
   ),
   /*
   anotherPossibleTool: {
