@@ -1,0 +1,25 @@
+Figure 4.10.
+Downloaded
+from
+https://academic.oup.com/edited-volume/28350/chapter/215170245
+Time‐aligned text and audio in ELAN, showing several levels of interlinearization: intonation units, words, word glosses, parts of
+speech, normative sentences, and free translations.
+p. 114 Once you have produced time‐aligned transcripts of the recordings, the next step is to further annotate the
+transcripts as interlinear glossed text (IGT), adding additional information like morphemic parsing and
+glosses of words and morphemes. Interlinearization tools that are tied to a lexical database (Fieldworks and
+Toolbox) are advantageous because they lend consistency and speed—entries are constrained to ensure
+they are consistent with those already in the database, and as the database grows, interlinearization
+becomes more and more automatic. It is essential, however, that the time codes from the time‐aligned
+transcript be preserved so that the resulting IGT will still relate to the media. You can choose to bring your
+by
+fully interlinearized text back into your time‐aligned transcript (in essence making a ‘round trip’ with the University
+p. 115 data), or not. Fig. 4.10 shows a transcript that was time‐aligned in ELAN, then exported to Fieldworks for
+interlinearization, and then reimported into ELAN, taking advantage of ELAN's hierarchical tier structure
+of
+for establishing parent–child relationships between the levels of IGT (see Berez 2007; Hellwig and Van Washington
+Uytvanck 2007).
+user
+on
+16
+September
+2023
